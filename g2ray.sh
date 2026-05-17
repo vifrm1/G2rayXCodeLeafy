@@ -857,7 +857,7 @@ while true; do
 
         12)
             clear; draw_logo
-            echo -e "${GREEN}📜 Live Engine Logs (Last 20 Lines)${NC}"
+            echo -e "${GREEN}📜 Live Engine Logs ${NC}"
             echo -e "${GREEN}──────────────────────────────────────────────${NC}"
             if [ -f "$LOG_DIR/xray.log" ] && [ -s "$LOG_DIR/xray.log" ]; then
                 tail -n 20 "$LOG_DIR/xray.log" | sed 's/^/  /'
